@@ -48,7 +48,7 @@ public class BlockParser {
 
     @NotNull
     private Reference<String> compute(String name) {
-        final Reference<String> ref = yields.computeIfAbsent(name, KeyedReference::create);
+        final Reference<String> ref = yields.computeIfAbsent(name, KeyedReference::createKey);
         if (ref.isNull())
             ref.set(name);
         return ref;
