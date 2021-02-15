@@ -82,7 +82,7 @@ dependencies {
 
     dependencies {
         if (isAutoDeploy) {
-            api 'com.github.comroid-git.guardian-framework:mutatio:master-SNAPSHOT'
+            api 'com.github.comroid-git.guardian:mutatio:master-SNAPSHOT'
         } else {
             api project(':guardian:mutatio')
         }
